@@ -1,12 +1,14 @@
 from PIL import Image, ImageDraw, ImageFont
 import os
+from django.conf import settings
 from django.utils import timezone
 
 
 def generate_profile_image(letter, email):
     img = Image.new('RGB', (100, 100), color=(103, 206, 212))
     d = ImageDraw.Draw(img)
-    font = ImageFont.truetype("arialbd.ttf", 50)
+    font_path = os.path.join(settings.BASE_DIR, 'static', 'fonts', 'arialbold.ttf')
+    font = ImageFont.truetype(font_path, 50)
     bbox = d.textbbox((0, 0), letter, font=font)
     text_width = bbox[2] - bbox[0]
     text_height = bbox[3] - bbox[1]
