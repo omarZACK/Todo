@@ -16,6 +16,7 @@
 </p>
 
 ---
+
 ## 📖 Table of Contents
 
 - [About](#-about)
@@ -28,6 +29,7 @@
 - [Contact & Contribution](#-contact--contribution)
 - [Host](#-hosting)
 ---
+
 ## 📌 About
 **Todo** is a powerful, scalable server-side application that provides a seamless <span style="color: #4CAF50;"><strong>API</strong></span> for managing tasks with high security and performance.  
 It features **JWT-based authentication**, **email verification**, **password reset functionality**, and a complete **CRUD system** for managing tasks, subtasks, and tags — all tailored for each individual user.
@@ -244,6 +246,7 @@ Create a `.env` file in the root of your project and add the following variables
 </div>
 
 ---
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -252,6 +255,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <p style="font-size:14px; color:#444;">✨ Explore these resources to improve your workflow and sharpen your development skills!</p>
 ---
+
 ## 📞 Contact & Contribution
 
 For any questions, suggestions, or feedback, feel free to reach out!
@@ -268,7 +272,9 @@ For any questions, suggestions, or feedback, feel free to reach out!
 4. Submit a **Pull Request** with a clear description of your changes.
 
 <p><img src="https://img.shields.io/badge/Contact%20and%20Contribute-Open%20for%20PRs-green" alt="Contact & Contribution" /></p>
+
 ---
+
 ## 🌐 Hosting
 
 This project is hosted on [PythonAnywhere](https://www.pythonanywhere.com/).
