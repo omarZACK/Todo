@@ -1,0 +1,12 @@
+Django==5.1.8
+pillow==11.2.1
+djangorestframework==3.16.0
+djangorestframework-simplejwt==5.5.0
+python-dotenv==1.1.0
+celery==5.5.1
+django-celery-beat==2.7.0
+redis==5.2.1
+Markdown==3.8
+yagmail==0.15.293
+premailer==3.10.0
+django-filter==25.1

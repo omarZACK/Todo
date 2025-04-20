@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activate Your Account</title>
+    <style>
+    {{ email_styles|safe }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="header">Activate Your Account</p>
+        <p class="body-text">Hi <span class="highlight">{{ user_name }}</span>,</p>
+        <p class="body-text">Thank you for signing up! We're thrilled to have you onboard.</p>
+        <p class="body-text">To activate your account, please click the button below and follow the instructions. It only takes a moment:</p>
+        <div class="button-container">
+            <a href="{{ link }}" class="button">Activate Your Account</a>
+        </div>
+        <p class="note">✨ <strong>Note:</strong> This link is valid for <span class="highlight">10 minutes</span>. If it expires, you'll need to request a new verification code.</p>
+        <p class="supportive-text">Have questions or need help? Don’t hesitate to reach out—our team is always here for you!</p>
+        <footer>
+            <p>— The <span class="highlight">Todo Team</span></p>
+            <p><a href="https://Todo.com">Visit our website</a> | <a href="mailto:o.e.wawy@gmail.com">Contact Support</a></p>
+        </footer>
+    </div>
+</body>
+</html>

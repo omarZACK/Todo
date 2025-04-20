@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Form{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/confirm_css.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <h2>{% block form_title %}Form{% endblock %}</h2>
+
+    {% block messages %}
+        {% if error %}
+            <div class="error-message">{{ error }}</div>
+        {% endif %}
+        {% if success %}
+            <div class="success-message">{{ success }}</div>
+        {% endif %}
+    {% endblock %}
+
+    {% block form_content %}
+    <!-- Child template will insert the form here -->
+    {% endblock %}
+</div>
+
+</body>
+</html>

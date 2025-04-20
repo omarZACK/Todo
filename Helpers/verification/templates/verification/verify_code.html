@@ -1,0 +1,18 @@
+{% extends "base_form.html" %}
+
+{% block title %}Verify Your Account{% endblock %}
+{% block form_title %}Verify Your Account{% endblock %}
+
+{% block form_content %}
+    <form method="POST" action="{% url 'verify-code' %}">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        {{ form.email }}
+
+        <label for="{{ form.code.id_for_label }}">Verification Code</label>
+        {{ form.code.errors }}
+        {{ form.code }}
+
+        <button type="submit">Verify</button>
+    </form>
+{% endblock %}
